@@ -33,3 +33,30 @@ QMK is developed and maintained by Jack Humbert of OLKB with contributions from 
 ## Official website
 
 [http://qmk.fm](http://qmk.fm) is the official website of QMK, where you can find links to this page, the documentation, and the keyboards supported by QMK.
+
+
+# my info
+
+### changing keymap
+
+#### env
+```
+$ git clone https://github.com/qmk/qmk_firmware
+$ cd qmk_firmware
+$ ./util/qmk_install.sh
+```
+
+#### build
+```
+make <keybord>:<keymap>
+```
+*mint60 mymap*
+```
+make mint60:custom
+```
+
+#### write firmware on Micro
+*mint60 mymap*
+``` 
+make mint60:custom:avrdude
+```
